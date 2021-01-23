@@ -1,5 +1,5 @@
 SELECT
-    SUM(i.total) as InvoiceTotal,
+    printf("$%.f", SUM(i.total)) as InvoiceTotal,
     e.FirstName as EmployeeFN,
     e.LastName as EmployeeLN
 FROM
